@@ -10,15 +10,18 @@ B.	Process of Data Analysis
 i.	Formatting the Data
 
 The process of analyzing the dataset began with formatting the data to be most useful to the pivot tables. To do this, I converted the Unix code deadline into human readable form using the below formula, and then extracted the year from the resulting date using the Year() function.
-  
+![image](https://user-images.githubusercontent.com/90073490/134060343-c4fe2d56-d4df-4f80-9177-ab52eaf13a42.png)
+
 I then converted the Category column into two columns labeled “Category” and “Subcategory,” allowing me to apply filters based on either the category or subcategory individually instead of only on the combination of the two. 
 
 ii.	Analyzing Launch Date vs. Outcomes
 
 After formatting the data to be readable, I began the analysis using pivot tables. I placed filters in the pivot table to filter out data based on both year launched and category, allowing me to control both the year of the data being used into the pivot table and the type of media that the campaigns were raising money for. Since my analysis only includes “theater” type campaigns, I used the filters to exclude all other categories.
- 
+ ![image](https://user-images.githubusercontent.com/90073490/134060395-1b97c0b7-eb04-4590-91cf-8a98a426ddca.png)
+
 
 I dragged the outcomes variable into “Columns” and “Values” and the launch data variable into Rows. This enabled me to visualize the total number of each type of outcome per month. I also excluded “live” outcomes from the pivot table, as requested. I then inserted a line graph to visualize the data.
+![image](https://user-images.githubusercontent.com/90073490/134060441-d49a6755-8ed3-4865-a1f0-2f748b43f8ac.png)
 
 
 iii.	Analyzing Fundraising Goal vs. Outcomes
@@ -49,4 +52,3 @@ There are two significant limitations to this dataset. While it does suggest con
 My table showing the number of outcomes for each month of launch dates is useful for mapping the most popular months for launches, but not particularly useful for determining which month is best and worst for successful outcomes. This chart doesn’t demonstrate the ratio of cancelled, failed, and successful outcomes to total shows per month, which would be necessary to isolate variability in success rates across time.
 
 Ideally, additional analysis would be performed with more input data that could possibly impact success rates. This analysis could be run using a multivariate regression to isolate both the probability of random data variance and the impact of each variable on outcomes. Running a more comprehensive, multivariate test would help to isolate the causal impact of each variable, and increase the chances that a particular relationship is causal and not merely correlative. Additionally, another table mapping the ratios between outcomes and total shows per month would be an easy way to isolate the relationships outcomes and months.
-![image](https://user-images.githubusercontent.com/90073490/134060038-44309903-21b9-4cf2-a2cf-7d9c3c892527.png)
